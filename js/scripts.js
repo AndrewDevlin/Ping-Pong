@@ -1,10 +1,17 @@
-//back-end lagic
-
-
-//front-end logic
 $(document).ready(function() {
-  $("#ping-pong.btn")submit(function(event) {
+  $("form").submit(function(event) {
     event.preventDefault();
-    $("#results").text();
+    //back-end lagic
+    var num = $("#user-number").val();
+    var list = []
+
+    for(var index = 1; index <= num; index += 1)
+    list = list + index
+
+    
+
+    //front-end logic
+
+    $("#results p").text(list);
   });
 });
