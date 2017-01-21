@@ -19,9 +19,10 @@ $(document).ready(function() {
         output = output + index + ","
       }
 
-    //for (index = 0; index < output.length; index++) {
-      //$("#results").append("<li>" + output[index]);
-    //}
-    $("#results").text(output);
+    output = output.split(',');
+    
+    for (index = 0; index < output.length; index++) {
+      $("#results").append("<li>" + output[index]);
+    }
   });
 });
