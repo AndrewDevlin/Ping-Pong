@@ -1,4 +1,4 @@
-# Pin-Ping
+# Ping-Pong
 
 #### By **Andrew Devlin**
 
