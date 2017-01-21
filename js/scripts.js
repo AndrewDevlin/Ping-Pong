@@ -3,22 +3,25 @@ $(document).ready(function() {
     event.preventDefault();
 
     var inputNum = $("#user-number").val();
-    var output = []
+    var output = ''
 
     for (var index = 1; index <= inputNum; index += 1)
       if (index % 3 === 0 && index % 5 !== 0) {
-        output = output + "ping"
+        output = output + "ping,"
       }
       else if (index % 5 === 0 && index % 3 !== 0) {
-        output = output + "pong"
+        output = output + "pong,"
       }
       else if (index % 15 === 0) {
-        output = output + "ping-pong"
+        output = output + "ping-pong,"
       }
       else {
-        output = output + index
+        output = output + index + ","
       }
 
-    $("#results p").text(output);
+    //for (index = 0; index < output.length; index++) {
+      //$("#results").append("<li>" + output[index]);
+    //}
+    $("#results").text(output);
   });
 });
