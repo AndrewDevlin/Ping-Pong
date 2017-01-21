@@ -8,8 +8,7 @@ __
 
 ## Setup/Installation Requirements
 
-*_Clone index.html and open it up in your browser._
-
+* _Clone index.html and open it up in your browser._
 
 ##Specifications:
 
@@ -24,6 +23,8 @@ __
 * _Numbers divisible by 15 are replaced with "ping-pong"_
 * _Input:_ 30
 * _Output:_ ping-pong
+
+1. Create an array of numbers up to and including the user input number.
 
 ## Known Bugs
 
