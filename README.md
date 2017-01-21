@@ -1,55 +1,56 @@
-# _Pig-Latin_
+# Pin-Ping
 
-#### By _**Andrew Devlin**_
+#### By **Andrew Devlin**
 
 ## Description
 
-__
+This  site will take in a number, and output a list of numbers in which numbers divisible by 3, 5, or 15 are replaced with ping, pong and ping-pong.
 
 ## Setup/Installation Requirements
 
-* _Clone index.html and open it up in your browser._
+* Clone index.html and open it up in your browser.
+* [Click here to see the site.](https://AndrewDevlin.github.io/Ping-Pong).
 
 ##Specifications:
 
-* _Numbers divisible by 3 are replaced with "ping"_
- * _Input:_ 9
- * _Output:_ ping
+* Numbers divisible by 3 are replaced with "ping".
+ * Input: 9
+ * Output: ping
 
-* _Numbers divisible by 5 are replaced with "pong"_
- * _Input:_ 10
- * _Output:_ pong
+* Numbers divisible by 5 are replaced with "pong".
+ * Input: 10
+ * Output: pong
 
-* _Numbers divisible by 15 are replaced with "ping-pong"_
-* _Input:_ 30
-* _Output:_ ping-pong
+* Numbers divisible by 15 are replaced with "ping-pong".
+* Input: 30
+* Output: ping-pong
 
 ##Process:
 
-_1. Create an empty string.
+1. Create an empty string.
 2. Create a loop that adds numbers to the string up to and including the user input number.
 3. Check to see if the numbers are multiples of 3, 5, or 15. If they are add ping, pong, or ping-pong to the string instead.
 4. Split the string.
 5. Create a loop that makes each new string a list item in an unordered list.
-6. Remove the previous result before printing the new one._
+6. Remove the previous result before printing the new one.
 
 ## Known Bugs
 
-_No known bugs_
+No known bugs
 
 ## Support and contact details
 
-_Contact Andrew_
+Contact Andrew
 
 ## Technologies Used
 
-_HTML5_
-_CSS_
-_JavaScript_
-_jQuery_
-_Bootstrap_
-_Git_
-_GitHub_
+* HTML5
+* CSS
+* JavaScript
+* jQuery
+* Bootstrap
+* Git
+* GitHub
 
 ### License
 
