@@ -24,9 +24,14 @@ __
 * _Input:_ 30
 * _Output:_ ping-pong
 
-1. Create an empty array.
-2. Create a loop that adds numbers to the array up to and including the user input number.
-3. Check to see if the numbers are multiples of 3, 5, or 15. If they are add ping, pong, or ping-pong to the array instead.
+##Process:
+
+_1. Create an empty string.
+2. Create a loop that adds numbers to the string up to and including the user input number.
+3. Check to see if the numbers are multiples of 3, 5, or 15. If they are add ping, pong, or ping-pong to the string instead.
+4. Split the string.
+5. Create a loop that makes each new string a list item in an unordered list.
+6. Remove the previous result before printing the new one._
 
 ## Known Bugs
 
