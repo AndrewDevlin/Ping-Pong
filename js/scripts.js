@@ -14,6 +14,7 @@ var makeList = function(num) {
       output.push(index)
     }
   }
+  return output
 };
 
 $(document).ready(function() {
@@ -22,7 +23,7 @@ $(document).ready(function() {
     $('#results').empty();
     var inputNum = $("#user-number").val();
     if (inputNum < 1) {
-      alert('Please enter a nuber >= 0')
+      alert('Please enter a number >= 0')
     }
     var output = makeList(inputNum)
     output = output.split(',');
