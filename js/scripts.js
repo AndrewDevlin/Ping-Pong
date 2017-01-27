@@ -1,20 +1,20 @@
 var makeList = function(num) {
-  var output = []
+  var numberList = []
   for (var index = 1; index <= num; index += 1) {
     if (index % 15 === 0) {
-      output.push('ping-pong')
+      numberList.push('ping-pong')
     }
     else if (index % 3 === 0) {
-      output.push('ping')
+      numberList.push('ping')
     }
     else if (index % 5 === 0) {
-      output.push('pong')
+      numberList.push('pong')
     }
     else {
-      output.push(index)
+      numberList.push(index)
     }
   }
-  return output
+  return numberList
 };
 
 $(document).ready(function() {
@@ -23,13 +23,11 @@ $(document).ready(function() {
     $('#results').empty();
     var inputNum = $("#user-number").val();
     if (inputNum < 1) {
-      alert('Please enter a number >= 0')
+      alert('Please enter a number > 0')
     }
     var output = makeList(inputNum)
-    output = output.split(',');
-
-    for (index = 0; index < output.length; index++) {
-      $("#results").append("<li>" + output[index]);
-    }
+    output.forEach(function(number) {
+      $("#results").append("<li>" + number + "</li>");
+    })
   });
 });
