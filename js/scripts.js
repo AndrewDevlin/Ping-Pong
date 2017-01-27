@@ -1,34 +1,29 @@
 var makeList = function(num) {
-  var output = ''
-  if (num < 1) {
-    alert('Please enter a nuber >= 0')
-  }
-  else {
-    for (var index = 1; index <= num; index += 1) {
-
-      if (index % 3 === 0 && index % 5 !== 0) {
-        output = output + "<span class=ping>" + "ping," + "</span>"
-      }
-      else if (index % 5 === 0 && index % 3 !== 0) {
-        output = output + "<span class=pong>" + "pong," + "</span>"
-      }
-      else if (index % 15 === 0) {
-        output = output + "<span class=ping-pong>" + "ping-pong," + "</span>"
-      }
-      else {
-        output = output + index + ","
-      }
+  var output = []
+  for (var index = 1; index <= num; index += 1) {
+    if (index % 15 === 0) {
+      output.push('ping-pong')
+    }
+    else if (index % 3 === 0) {
+      output.push('ping')
+    }
+    else if (index % 5 === 0) {
+      output.push('pong')
+    }
+    else {
+      output.push(index)
     }
   }
-  return output
 };
 
-//front-end logic
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
     $('#results').empty();
     var inputNum = $("#user-number").val();
+    if (inputNum < 1) {
+      alert('Please enter a nuber >= 0')
+    }
     var output = makeList(inputNum)
     output = output.split(',');
 
